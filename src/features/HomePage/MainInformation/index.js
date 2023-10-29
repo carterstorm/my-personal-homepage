@@ -1,4 +1,5 @@
 import sk_photo from "../../../assets/sk_photo.jpg";
+import { email } from "../../../commonValues";
 import {
     AboutContainer,
     Avatar,
@@ -32,7 +33,7 @@ export const MainInformation = () => (
                 with React and show me good practices how to write better and
                 cleaner code 😇
             </Summary>
-            <ButtonLink>
+            <ButtonLink draggable={false} href={`mailto:${email}`} title={email}>
                 Message me
             </ButtonLink>
         </AboutContainer>
