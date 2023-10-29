@@ -1,3 +1,4 @@
+import sk_photo from "../../../assets/sk_photo.jpg";
 import {
     AboutContainer,
     Avatar,
@@ -10,11 +11,27 @@ import {
 
 export const MainInformation = () => (
     <Wrapper>
-        <Avatar />
+        <Avatar
+            src={sk_photo}
+            alt="Sebastian Komorowski photo"
+            title="Sebastian Komorowksi photo"
+            draggable={false}
+        />
         <AboutContainer>
-            <Hi></Hi>
-            <Heading />
-            <Summary></Summary>
+            <Hi>
+                Hi there! 🚀 🤙 😎  I'm a guy who just starting his
+                adventure in IT world.<br />
+                My name is:
+            </Hi>
+            <Heading>Sebastian Komorowski</Heading>
+            <Summary>
+                I have been learning Frontend technology for some time.
+                It gives me a lot of satisfaction.
+                I know I still have a lot to learn, but i'm really motivated
+                and I hope you will help me become a Junior Frontend Developer
+                with React and show me good practices how to write better and
+                cleaner code 😇
+            </Summary>
             <ButtonLink>
                 Message me
             </ButtonLink>
