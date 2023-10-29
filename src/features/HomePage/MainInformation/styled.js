@@ -17,8 +17,8 @@ export const AboutContainer = styled.div`
 
 export const Avatar = styled.img`
     object-fit: cover;
-    width: 20vw;
-    height: 20vw;
+    width: 24vw;
+    height: 24vw;
     border-radius: 50%;
     box-shadow: 5px 10px 40px #bbb;
     user-select: none;
