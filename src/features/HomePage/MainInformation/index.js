@@ -33,7 +33,10 @@ export const MainInformation = () => (
                 with React and show me good practices how to write better and
                 cleaner code 😇
             </Summary>
-            <ButtonLink draggable={false} href={`mailto:${email}`} title={email}>
+            <ButtonLink
+                draggable={false}
+                href={`mailto:${email}`}
+                title={email}>
                 Message me
             </ButtonLink>
         </AboutContainer>
