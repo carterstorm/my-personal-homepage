@@ -5,7 +5,7 @@ export const StyledHeading = styled.h1`
     font-weight: 900;
     margin: 0;
     color: ${({ theme }) => theme.colors.text.secondaryTextColor};
-    padding: ${({ skillsPadding }) => skillsPadding ? "16px 0" : null};
+    padding: ${({ skillsPadding }) => skillsPadding ? "16px" : null};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         font-size: 28px;
