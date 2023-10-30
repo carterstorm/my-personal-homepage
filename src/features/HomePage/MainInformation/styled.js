@@ -14,15 +14,16 @@ export const Wrapper = styled.header`
         grid-gap: 40px;
         justify-items: center;
     };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-gap: 30px;
+        padding: 0 25px;
+    };
 `;
 
 export const AboutContainer = styled.div`
     display: grid;
     grid-gap: 15px;
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
-        justify-items: center;
-    };
 `;
 
 export const Avatar = styled.img`
@@ -34,6 +35,11 @@ export const Avatar = styled.img`
     border-radius: 50%;
     box-shadow: 5px 10px 40px ${({ theme }) => theme.colors.avatar.boxShadow};
     user-select: none;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        min-width: 260px;
+        min-height: 260px;
+    };
 `;
 
 export const Hi = styled.span`
@@ -43,7 +49,6 @@ export const Hi = styled.span`
     text-align: justify;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
-        text-align: center;
         font-size: 12px;
     };
 `;
@@ -56,6 +61,10 @@ export const Heading = styled.h1`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         font-size: 28px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 24px;
     };
 `;
 
