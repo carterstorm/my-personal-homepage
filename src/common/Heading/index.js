@@ -1,7 +1,10 @@
 import { StyledHeading } from "./styled";
 
-export const Heading = ({ title, skillsPadding }) => (
-    <StyledHeading skillsPadding={skillsPadding}>
+export const Heading = ({ title, skillsPadding, as }) => (
+    <StyledHeading
+        skillsPadding={skillsPadding}
+        as={as}
+    >
         {title}
     </StyledHeading>
 );
