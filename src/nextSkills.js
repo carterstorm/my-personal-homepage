@@ -41,6 +41,10 @@ export const nextSkills = [
     },
     {
         id: 9,
+        skillText: "Node.js",
+    },
+    {
+        id: 9,
         skillText: "NestJS",
     },
     {
