@@ -19,11 +19,20 @@ export const Wrapper = styled.header`
         grid-gap: 30px;
         padding: 0 25px;
     };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        grid-gap: 20px;
+        padding: 0 15px;
+    };
 `;
 
 export const AboutContainer = styled.div`
     display: grid;
     grid-gap: 15px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        grid-gap: 10px;
+    };
 `;
 
 export const Avatar = styled.img`
@@ -39,6 +48,11 @@ export const Avatar = styled.img`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         min-width: 260px;
         min-height: 260px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        min-width: 220px;
+        min-height: 220px;
     };
 `;
 
@@ -66,6 +80,10 @@ export const Heading = styled.h1`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 24px;
     };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        font-size: 22px;
+    };
 `;
 
 export const Summary = styled(Hi)`
@@ -88,5 +106,15 @@ export const ButtonLink = styled.a`
 
     &:hover {
         filter: brightness(110%);
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 14px;
+        padding: 8px 16px;
+        width: 150px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        font-size: 12px;
     };
 `;
