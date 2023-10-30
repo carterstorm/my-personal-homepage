@@ -14,5 +14,9 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         color: ${({ theme }) => theme.colors.text.primaryTextColor};
         padding-top: 120px;
+
+        @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+            padding-top: 60px;
+        };
     };
 `;

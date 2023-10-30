@@ -8,19 +8,29 @@ export const Wrapper = styled.header`
     margin: 0 auto;
     padding: 0 50px;
     max-width: 1200px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        justify-items: center;
+    };
 `;
 
 export const AboutContainer = styled.div`
     display: grid;
     grid-gap: 15px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        justify-items: center;
+    };
 `;
 
 export const Avatar = styled.img`
     object-fit: cover;
-    width: 22vw;
-    height: 22vw;
-    min-width: 320px;
-    min-height: 320px;
+    width: 26vw;
+    height: 26vw;
+    min-width: 360px;
+    min-height: 360px;
     border-radius: 50%;
     box-shadow: 5px 10px 40px ${({ theme }) => theme.colors.avatar.boxShadow};
     user-select: none;
@@ -31,6 +41,11 @@ export const Hi = styled.span`
     font-weight: 400;
     line-height: 1.6;
     text-align: justify;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        text-align: center;
+        font-size: 12px;
+    };
 `;
 
 export const Heading = styled.h1`
@@ -38,6 +53,10 @@ export const Heading = styled.h1`
     font-weight: 900;
     margin: 0;
     color: ${({ theme }) => theme.colors.text.secondaryTextColor};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        font-size: 28px;
+    };
 `;
 
 export const Summary = styled(Hi)`
