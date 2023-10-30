@@ -6,6 +6,7 @@ const colorsName = {
     white: "#FFFFFF",
     black: "#000000",
     whiteLilac: "#FBFBFE",
+    iron: "rgba(209, 213, 218, 0.3)",
 };
 
 const common = {
@@ -21,6 +22,8 @@ export const themeLight = {
     ...common,
     colors: {
         backgroundColor: colorsName.whiteLilac,
+        horizontalLine: colorsName.iron,
+        listItemCircle: colorsName.scienceBlue,
         text: {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
