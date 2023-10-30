@@ -12,7 +12,9 @@ const colorsName = {
 const common = {
     breakpoints: {
         mobileSmall: 480,
+        mobileExtraBreakpoint: 610,
         mobileMax: 767,
+        tabletExtraBreakpoint: 920,
         tabletVerticalMax: 976,
         tabletHorizontalMax: 1199,
     },
