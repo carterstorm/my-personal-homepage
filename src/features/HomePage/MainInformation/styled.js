@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Envelope } from "../../../assets/envelope.svg";
 
 export const Wrapper = styled.header`
     display: grid;
@@ -91,14 +92,16 @@ export const Summary = styled(Hi)`
 `;
 
 export const ButtonLink = styled.a`
-    width: 175px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     color: ${({ theme }) => theme.colors.button.textColor};
-    background-color: ${({ theme }) => theme.colors.button.background};
-    padding: 10px 24px;
-    font-weight: 700;
-    border-radius: 5px;
     border: 2px solid ${({ theme }) => theme.colors.button.borderColor};
+    background-color: ${({ theme }) => theme.colors.button.background};
+    border-radius: 5px;
+    padding: 6px 18px;
+    font-weight: 700;
     cursor: pointer;
     transition: .2s;
     text-decoration: none;
@@ -109,12 +112,18 @@ export const ButtonLink = styled.a`
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 14px;
-        padding: 8px 16px;
-        width: 150px;
+        font-size: 12px;
     };
+`;
+
+export const ButtonIcon = styled(Envelope)`
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    color: ${({ theme }) => theme.colors.button.textColor};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
-        font-size: 12px;
+        width: 20px;
+        height: 20px;
     };
 `;

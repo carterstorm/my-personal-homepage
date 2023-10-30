@@ -3,6 +3,7 @@ import { email } from "../../../commonValues";
 import {
     AboutContainer,
     Avatar,
+    ButtonIcon,
     ButtonLink,
     Heading,
     Hi,
@@ -33,12 +34,15 @@ export const MainInformation = () => (
                 with React and show me good practices how to write better and
                 cleaner code 😇
             </Summary>
-            <ButtonLink
-                draggable={false}
-                href={`mailto:${email}`}
-                title={email}>
-                Message me
-            </ButtonLink>
+            <div>
+                <ButtonLink
+                    draggable={false}
+                    href={`mailto:${email}`}
+                    title={email}>
+                    <ButtonIcon />
+                    Message me
+                </ButtonLink>
+            </div>
         </AboutContainer>
     </Wrapper>
 )
