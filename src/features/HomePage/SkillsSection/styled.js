@@ -15,14 +15,4 @@ export const SkillsList = styled.ul`
     font-size: 14px;
     border-top: 1px solid ${({ theme }) => theme.colors.horizontalLine};
     list-style-position: inside;
-    list-style: none;
-`;
-
-export const SkillItem = styled.li`
-    ::before {
-        content: "👉";
-        margin-right: 16px;
-        font-size: 20px;
-        vertical-align: -3px;
-    };
 `;

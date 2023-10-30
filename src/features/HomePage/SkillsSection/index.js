@@ -1,21 +1,21 @@
 import { Heading } from "../../../common/Heading";
 import { currentSkills } from "../../../currentSkills";
-import { SkillItem, SkillsList, Wrapper } from "./styled";
+import { SkillsList, Wrapper } from "./styled";
 
 export const SkillsSection = () => (
     <Wrapper>
         <Heading
-            title="My skills"
+            title="My skillset"
             skillsPadding
             as="h2"
         />
         <SkillsList>
             {currentSkills.map(({ id, skillText }) => (
-                <SkillItem key={id}>
+                <li key={id}>
                     <span>
                         {skillText}
                     </span>
-                </SkillItem>
+                </li>
             ))}
         </SkillsList>
     </Wrapper>
