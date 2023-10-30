@@ -1,11 +1,11 @@
 import sk_photo from "../../../assets/sk_photo.jpg";
 import { email } from "../../../commonValues";
+import { Heading } from "../../../common/Heading"
 import {
     AboutContainer,
     Avatar,
     ButtonIcon,
     ButtonLink,
-    Heading,
     Hi,
     Summary,
     Wrapper
@@ -25,7 +25,9 @@ export const MainInformation = () => (
                 adventure in IT world.<br />
                 My name is:
             </Hi>
-            <Heading>Sebastian Komorowski</Heading>
+            <Heading
+                title="Sebastian Komorowski"
+            />
             <Summary>
                 I have been learning Frontend technology for some time.
                 It gives me a lot of satisfaction.
