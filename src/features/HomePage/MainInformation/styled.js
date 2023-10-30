@@ -47,7 +47,6 @@ export const ButtonLink = styled.a`
     color: ${({ theme }) => theme.colors.button.textColor};
     background-color: ${({ theme }) => theme.colors.button.background};
     padding: 10px 24px;
-    font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
     border: 2px solid ${({ theme }) => theme.colors.button.borderColor};
