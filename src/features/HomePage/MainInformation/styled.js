@@ -6,9 +6,6 @@ export const Wrapper = styled.header`
     grid-template-columns: auto 1fr;
     grid-gap: 60px;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 50px;
-    max-width: 1200px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         grid-template-columns: 1fr;
@@ -18,12 +15,10 @@ export const Wrapper = styled.header`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-gap: 30px;
-        padding: 0 25px;
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
         grid-gap: 20px;
-        padding: 0 15px;
     };
 `;
 
