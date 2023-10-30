@@ -28,6 +28,7 @@ export const Hi = styled.span`
     font-size: 14px;
     font-weight: 400;
     line-height: 1.6;
+    text-align: justify;
 `;
 
 export const Heading = styled.h1`
@@ -38,7 +39,7 @@ export const Heading = styled.h1`
 `;
 
 export const Summary = styled(Hi)`
-    width: 600px;
+    width: 575px;
 `;
 
 export const ButtonLink = styled.a`
