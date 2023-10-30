@@ -4,6 +4,10 @@ export const Wrapper = styled.section`
     margin-top: 60px;
     padding: 0 32px 0;
     background-color: #fff;
+
+    @media(max-width: 920px) {
+        padding: 0 0;
+    };
 `;
 
 export const SkillsList = styled.ul`
@@ -15,4 +19,18 @@ export const SkillsList = styled.ul`
     font-size: 14px;
     border-top: 1px solid ${({ theme }) => theme.colors.horizontalLine};
     list-style-position: inside;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletExtraBreakpoint}px) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileExtraBreakpoint}px) {
+        grid-template-columns: repeat(1, 1fr);
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 12px;
+        grid-gap: 8px;
+    };
 `;
