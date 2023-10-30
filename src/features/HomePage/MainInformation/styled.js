@@ -20,7 +20,7 @@ export const Avatar = styled.img`
     width: 24vw;
     height: 24vw;
     border-radius: 50%;
-    box-shadow: 5px 10px 40px #bbb;
+    box-shadow: 5px 10px 40px ${({ theme }) => theme.colors.avatar.boxShadow};
     user-select: none;
 `;
 
@@ -34,6 +34,7 @@ export const Heading = styled.h1`
     font-size: 38px;
     font-weight: 900;
     margin: 0;
+    color: ${({ theme }) => theme.colors.text.secondaryTextColor};
 `;
 
 export const Summary = styled(Hi)`
@@ -43,13 +44,13 @@ export const Summary = styled(Hi)`
 export const ButtonLink = styled.a`
     width: 175px;
     text-align: center;
-    color: #FFFFFF;
-    background-color: #0366D6;
+    color: ${({ theme }) => theme.colors.button.textColor};
+    background-color: ${({ theme }) => theme.colors.button.background};
     padding: 10px 24px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 5px;
-    border: 2px solid #000000;
+    border: 2px solid ${({ theme }) => theme.colors.button.borderColor};
     cursor: pointer;
     transition: .2s;
     text-decoration: none;
