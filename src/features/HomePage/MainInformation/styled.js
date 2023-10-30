@@ -17,8 +17,10 @@ export const AboutContainer = styled.div`
 
 export const Avatar = styled.img`
     object-fit: cover;
-    width: 24vw;
-    height: 24vw;
+    width: 22vw;
+    height: 22vw;
+    min-width: 320px;
+    min-height: 320px;
     border-radius: 50%;
     box-shadow: 5px 10px 40px ${({ theme }) => theme.colors.avatar.boxShadow};
     user-select: none;
@@ -39,7 +41,7 @@ export const Heading = styled.h1`
 `;
 
 export const Summary = styled(Hi)`
-    width: 575px;
+    max-width: 575px;
 `;
 
 export const ButtonLink = styled.a`
