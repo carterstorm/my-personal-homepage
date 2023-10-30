@@ -13,11 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     #root {
         font-family: 'Inter', sans-serif;
         color: ${({ theme }) => theme.colors.text.primaryTextColor};
-        padding-top: 120px;
-
-        @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
-            padding-top: 60px;
-        };
+        padding-top: 60px;
 
         @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
             padding-top: 25px;
