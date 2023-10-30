@@ -24,6 +24,10 @@ export const currentSkills = [
         skillText: "SASS/LESS",
     },
     {
+        id: 67,
+        skillText: "Styled-components",
+    },
+    {
         id: 7,
         skillText: "JavaScript ES6+",
     },

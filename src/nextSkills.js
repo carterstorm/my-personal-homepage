@@ -12,12 +12,20 @@ export const nextSkills = [
         skillText: "NX",
     },
     {
+        id: 34,
+        skillText: "pnpm",
+    },
+    {
         id: 4,
         skillText: "Tailwind CSS",
     },
     {
         id: 5,
         skillText: "Storybook",
+    },
+    {
+        id: 56,
+        skillText: "Chromatica",
     },
     {
         id: 6,
