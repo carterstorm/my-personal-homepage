@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Envelope } from "../../../assets/envelope.svg";
+import { ReactComponent as Envelope } from "../../assets/envelope.svg";
 
 export const Wrapper = styled.header`
     display: grid;

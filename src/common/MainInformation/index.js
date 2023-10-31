@@ -1,6 +1,6 @@
-import sk_photo from "../../../assets/sk_photo.jpg";
-import { email } from "../../../commonValues";
-import { Heading } from "../../../common/Heading"
+import sk_photo from "../../assets/sk_photo.jpg";
+import { email } from "../../commonValues";
+import { Heading } from "../Heading"
 import {
     AboutContainer,
     Avatar,
