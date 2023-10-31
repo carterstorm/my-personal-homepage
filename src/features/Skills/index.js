@@ -1,4 +1,4 @@
-import { SkillsSection } from "../../common/SkillsSection";
+import { SkillsSection } from "./SkillsSection";
 import { currentSkills } from "../../currentSkills";
 import { nextSkills } from "../../nextSkills";
 import { futureSkills } from "../../futureSkills";

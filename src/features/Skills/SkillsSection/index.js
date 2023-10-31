@@ -1,4 +1,4 @@
-import { Heading } from "../Heading";
+import { Heading } from "../../../common/Heading";
 import { SkillsList, Wrapper } from "./styled";
 
 export const SkillsSection = ({ title, skills }) => (
