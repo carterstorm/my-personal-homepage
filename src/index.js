@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { HomePage } from './features/HomePage';
+import { App } from './core/App';
 import { Normalize } from 'styled-normalize';
 import { GlobalStyle } from './GlobalStyles';
 import { StyleSheetManager, ThemeProvider } from 'styled-components';
@@ -15,7 +15,7 @@ root.render(
       <ThemeProvider theme={themeLight}>
         <Normalize />
         <GlobalStyle />
-        <HomePage />
+        <App />
       </ThemeProvider>
     </StyleSheetManager>
   </React.StrictMode>
