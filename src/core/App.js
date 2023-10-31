@@ -4,6 +4,7 @@ import { WebsiteWrapper } from "./styled";
 import { Skills } from "../features/Skills";
 import { AboutMe } from "../features/AboutMe";
 import { MyProjects } from "../features/MyProjects";
+import { Footer } from "../common/Footer";
 
 export const App = () => (
     <HashRouter>
@@ -23,6 +24,7 @@ export const App = () => (
                     <Redirect to="/aboutMe" />
                 </Route>
             </Switch>
+            <Footer />
         </WebsiteWrapper>
     </HashRouter>
 );
