@@ -59,7 +59,7 @@ export const Hi = styled.span`
     line-height: 1.6;
     text-align: justify;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 12px;
     };
 `;
