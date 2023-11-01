@@ -1,4 +1,5 @@
 import { email } from "../../commonValues";
+import { Social } from "./Social";
 import {
     Address,
     ContactHeading,
@@ -22,5 +23,6 @@ export const Footer = () => (
                 </Email>
             </div>
         </Address>
+        <Social />
     </Wrapper>
 );
