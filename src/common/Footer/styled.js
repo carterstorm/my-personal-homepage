@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-    padding: 80px 0;
+    padding: 80px 0 40px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 15px;
 `;
 
 export const ContactHeading = styled.h3`
@@ -24,6 +24,6 @@ export const Email = styled.a`
     transition: .2s;
 
     &:hover {
-        color: ${({ theme }) => theme.colors.emailFooterColor}
+        color: ${({ theme }) => theme.colors.footerLinksColor}
     };
 `;
