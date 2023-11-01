@@ -26,7 +26,7 @@ export const themeLight = {
         backgroundColor: colorsName.whiteLilac,
         horizontalLine: colorsName.iron,
         listItemCircle: colorsName.scienceBlue,
-        emailFooterColor: colorsName.scienceBlue,
+        footerLinksColor: colorsName.scienceBlue,
         text: {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
