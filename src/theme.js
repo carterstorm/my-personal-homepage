@@ -1,7 +1,7 @@
 const colorsName = {
     mineShaft: "#252525",
     slateGray: "#6E7E91",
-    silverShadow: "#BBBBBB",
+    silverShadow: "#DDDDDD",
     scienceBlue: "#0366D6",
     white: "#FFFFFF",
     black: "#000000",
@@ -11,7 +11,7 @@ const colorsName = {
 
 const common = {
     borderRadius: 10,
-    boxShadow: `5px 5px 20px ${colorsName.silverShadow}`,
+    boxShadow: `10px 20px 20px ${colorsName.silverShadow}`,
     boxShadowColor: colorsName.silverShadow,
     breakpoints: {
         mobileSmall: 480,
@@ -31,6 +31,7 @@ export const themeLight = {
         listItemCircle: colorsName.scienceBlue,
         footerLinksColorHover: colorsName.scienceBlue,
         portfolioIconColor: colorsName.scienceBlue,
+        tileColor: colorsName.white,
         text: {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
