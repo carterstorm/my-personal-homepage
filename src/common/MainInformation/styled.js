@@ -11,7 +11,6 @@ export const Wrapper = styled.header`
         grid-template-columns: 1fr;
         grid-gap: 40px;
         justify-items: center;
-        padding: 0 16px;
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
