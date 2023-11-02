@@ -1,18 +1,19 @@
-import { Link } from "react-router-dom";
+import { NavigationItem, NavigationList, StyledNavLink } from "./styled";
 import { toAboutMe, toMyProjects, toSkills } from "../../../routes";
+
 
 export const Menu = () => (
     <nav>
-        <ul>
-            <li>
-                <Link to={toAboutMe()}>About me</Link>
-            </li>
-            <li>
-                <Link to={toSkills()}>My skills</Link>
-            </li>
-            <li>
-                <Link to={toMyProjects()}>My projects</Link>
-            </li>
-        </ul>
+        <NavigationList>
+            <NavigationItem>
+                <StyledNavLink activeClassName="active" to={toAboutMe()}>About me</StyledNavLink>
+            </NavigationItem>
+            <NavigationItem>
+                <StyledNavLink activeClassName="active" to={toSkills()}>My skills</StyledNavLink>
+            </NavigationItem>
+            <NavigationItem>
+                <StyledNavLink activeClassName="active" to={toMyProjects()}>My projects</StyledNavLink>
+            </NavigationItem>
+        </NavigationList>
     </nav>
 );

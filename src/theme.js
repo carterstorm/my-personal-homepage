@@ -30,6 +30,7 @@ export const themeLight = {
         text: {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
+            navigationActiveColor: colorsName.scienceBlue,
         },
         avatar: {
             boxShadow: colorsName.silverShadow,
