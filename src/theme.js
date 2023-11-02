@@ -11,7 +11,7 @@ const colorsName = {
 
 const common = {
     borderRadius: 10,
-    boxShadow: `5px 10px 40px ${colorsName.silverShadow}`,
+    boxShadow: `5px 5px 20px ${colorsName.silverShadow}`,
     boxShadowColor: colorsName.silverShadow,
     breakpoints: {
         mobileSmall: 480,
