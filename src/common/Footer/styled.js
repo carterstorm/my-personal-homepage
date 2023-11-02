@@ -24,6 +24,7 @@ export const Email = styled.a`
     transition: .2s;
 
     &:hover {
-        color: ${({ theme }) => theme.colors.footerLinksColor}
+        color: ${({ theme }) => theme.colors.footerLinksColorHover}
     };
 `;
+

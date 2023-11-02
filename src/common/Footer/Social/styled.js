@@ -18,7 +18,7 @@ export const SocialLink = styled.a`
     transition: .2s;
 
     &:hover {
-        color: ${({ theme }) => theme.colors.footerLinksColor};
+        color: ${({ theme }) => theme.colors.footerLinksColorHover};
     };
 `;
 
