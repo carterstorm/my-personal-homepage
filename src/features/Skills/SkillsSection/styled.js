@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
     margin-top: 60px;
     padding: 0 32px 0;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.colors.tileColor};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadius}px;
 
