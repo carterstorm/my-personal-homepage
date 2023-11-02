@@ -1,30 +1,38 @@
-import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import { MainInformation } from "../common/MainInformation";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import { WebsiteWrapper } from "./styled";
 import { Skills } from "../features/Skills";
 import { AboutMe } from "../features/AboutMe";
 import { MyProjects } from "../features/MyProjects";
-import { Footer } from "../common/Footer";
+import { LayoutPage } from "../features/LayoutPage";
+import { toAboutMe } from "../routes";
+
+const router = createBrowserRouter(
+    [
+        {
+            path: "/",
+            element: <LayoutPage />,
+            children: [{
+                path: "aboutMe",
+                element: <AboutMe />
+            },
+            {
+                path: "skills",
+                element: <Skills />
+            },
+            {
+                path: "projects",
+                element: <MyProjects />
+            },
+            {
+                path: "*",
+                element: <Navigate to={toAboutMe()} />
+            },
+            ]
+        },
+    ]);
 
 export const App = () => (
-    <HashRouter>
-        <WebsiteWrapper>
-            <MainInformation />
-            <Switch>
-                <Route path="/aboutMe">
-                    <AboutMe />
-                </Route>
-                <Route path="/skills">
-                    <Skills />
-                </Route>
-                <Route path="/projects">
-                    <MyProjects />
-                </Route>
-                <Route path="/">
-                    <Redirect to="/aboutMe" />
-                </Route>
-            </Switch>
-            <Footer />
-        </WebsiteWrapper>
-    </HashRouter>
+    <WebsiteWrapper>
+        <RouterProvider router={router} />
+    </WebsiteWrapper>
 );
