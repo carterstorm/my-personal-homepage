@@ -4,7 +4,7 @@ import { Skills } from "../features/Skills";
 import { AboutMe } from "../features/AboutMe";
 import { MyProjects } from "../features/MyProjects";
 import { LayoutPage } from "../features/LayoutPage";
-import { toAboutMe } from "../routes";
+import { toAboutMe, toMyProjects, toSkills } from "../routes";
 
 const router = createBrowserRouter(
     [
@@ -12,15 +12,15 @@ const router = createBrowserRouter(
             path: "/",
             element: <LayoutPage />,
             children: [{
-                path: "aboutMe",
+                path: toAboutMe(),
                 element: <AboutMe />
             },
             {
-                path: "skills",
+                path: toSkills(),
                 element: <Skills />
             },
             {
-                path: "projects",
+                path: toMyProjects(),
                 element: <MyProjects />
             },
             {
