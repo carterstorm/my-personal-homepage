@@ -11,6 +11,10 @@ export const StyledHeading = styled.h1`
         font-size: 28px;
     };
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletExtraBreakpoint}px) {
+        padding: ${({ skillsPadding }) => skillsPadding ? "16px" : null};
+    };
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 24px;
     };
