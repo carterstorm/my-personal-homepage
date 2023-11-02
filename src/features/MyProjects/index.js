@@ -11,7 +11,7 @@ import {
 } from "./styled";
 
 export const MyProjects = () => {
-    const gitHubData = useGitHubData(2);
+    const { state, data } = useGitHubData(2);
 
     return (
         <Wrapper>
@@ -21,14 +21,14 @@ export const MyProjects = () => {
                 <PortfolioText>My recent projects</PortfolioText>
             </PortfolioInfo>
             {
-                gitHubData.state === "loading" ?
+                state === "loading" ?
                     (<ProjectsLoading />)
                     :
-                    gitHubData.state === "error" ?
+                    state === "error" ?
                         (<ProjectsError />)
                         :
                         (<ProjectsSuccess
-                            gitHubData={gitHubData}
+                            data={data}
                         />)
             }
         </Wrapper>
