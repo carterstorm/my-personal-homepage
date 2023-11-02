@@ -30,6 +30,7 @@ export const themeLight = {
         horizontalLine: colorsName.iron,
         listItemCircle: colorsName.scienceBlue,
         footerLinksColorHover: colorsName.scienceBlue,
+        portfolioIconColor: colorsName.scienceBlue,
         text: {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
