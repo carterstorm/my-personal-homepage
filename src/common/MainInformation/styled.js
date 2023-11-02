@@ -38,7 +38,7 @@ export const Avatar = styled.img`
     min-width: 360px;
     min-height: 360px;
     border-radius: 50%;
-    box-shadow: 5px 10px 40px ${({ theme }) => theme.colors.avatar.boxShadow};
+    box-shadow: ${({ theme }) => theme.boxShadow};
     user-select: none;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
@@ -75,7 +75,7 @@ export const ButtonLink = styled.a`
     color: ${({ theme }) => theme.colors.button.textColor};
     border: 2px solid ${({ theme }) => theme.colors.button.borderColor};
     background-color: ${({ theme }) => theme.colors.button.background};
-    border-radius: 5px;
+    border-radius: ${({ theme }) => theme.borderRadius}px;
     padding: 6px 18px;
     font-weight: 700;
     cursor: pointer;

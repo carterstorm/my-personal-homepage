@@ -10,6 +10,9 @@ const colorsName = {
 };
 
 const common = {
+    borderRadius: 10,
+    boxShadow: `5px 10px 40px ${colorsName.silverShadow}`,
+    boxShadowColor: colorsName.silverShadow,
     breakpoints: {
         mobileSmall: 480,
         mobileExtraBreakpoint: 610,
@@ -31,9 +34,6 @@ export const themeLight = {
             primaryTextColor: colorsName.slateGray,
             secondaryTextColor: colorsName.mineShaft,
             navigationActiveColor: colorsName.scienceBlue,
-        },
-        avatar: {
-            boxShadow: colorsName.silverShadow,
         },
         button: {
             background: colorsName.scienceBlue,
