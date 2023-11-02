@@ -26,5 +26,13 @@ export const Email = styled.a`
     &:hover {
         color: ${({ theme }) => theme.colors.footerLinksColorHover}
     };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 18px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        font-size: 14px;
+    };
 `;
 
