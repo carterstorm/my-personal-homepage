@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectWrapper = styled.div`
+export const Wrapper = styled.div`
     margin: 40px 0 0;
 `;
 

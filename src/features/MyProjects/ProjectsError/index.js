@@ -1,3 +1,7 @@
+import { ProjectWrapper } from "../styled";
+
 export const ProjectsError = () => (
-    <>Error</>
+    <ProjectWrapper>
+        error
+    </ProjectWrapper>
 );

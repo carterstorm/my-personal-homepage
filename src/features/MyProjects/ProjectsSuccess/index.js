@@ -1,5 +1,4 @@
 import {
-    ProjectWrapper,
     ProjectDescription,
     ProjectItem,
     ProjectList,
@@ -7,10 +6,11 @@ import {
     LinksContainer,
     LinkElement,
     Link,
+    Wrapper,
 } from "./styled";
 
 export const ProjectsSuccess = ({ data }) => (
-    <ProjectWrapper>
+    <Wrapper>
         <ProjectList >
             {data.map(({
                 id,
@@ -43,5 +43,5 @@ export const ProjectsSuccess = ({ data }) => (
                 </ProjectItem>
             ))}
         </ProjectList>
-    </ProjectWrapper>
+    </Wrapper>
 );

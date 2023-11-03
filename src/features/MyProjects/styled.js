@@ -56,3 +56,10 @@ export const PortfolioText = styled.span`
         font-size: 10px;
     };
 `;
+
+export const ProjectWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0 0;
+`;

@@ -1,8 +1,9 @@
-import { Wrapper, ProjectsLoadingText, Spinner } from "./styled";
+import { ProjectWrapper } from "../styled";
+import { ProjectsLoadingText, Spinner } from "./styled";
 
 export const ProjectsLoading = () => (
-    <Wrapper>
+    <ProjectWrapper>
         <ProjectsLoadingText>Please wait, projects are being loaded...</ProjectsLoadingText>
         <Spinner />
-    </Wrapper>
+    </ProjectWrapper>
 );
