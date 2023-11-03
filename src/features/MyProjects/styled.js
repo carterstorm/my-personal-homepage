@@ -58,8 +58,8 @@ export const PortfolioText = styled.span`
 `;
 
 export const ProjectWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 30px 0 0;
+    display: grid;
+    justify-items: center;
+    grid-gap: 20px;
+    margin: 20px 0 0;
 `;
