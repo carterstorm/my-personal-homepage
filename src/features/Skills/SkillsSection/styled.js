@@ -24,7 +24,7 @@ export const SkillsList = styled.ul`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletExtraBreakpoint}px) {
         grid-template-columns: repeat(2, 1fr);
-        padding: 16px;
+        padding: 32px;
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileExtraBreakpoint}px) {

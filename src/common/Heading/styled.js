@@ -12,7 +12,7 @@ export const StyledHeading = styled.h1`
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletExtraBreakpoint}px) {
-        padding: ${({ skillsPadding }) => skillsPadding ? "16px" : null};
+        padding: ${({ skillsPadding }) => skillsPadding ? "16px 32px" : null};
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
