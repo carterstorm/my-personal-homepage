@@ -12,6 +12,15 @@ export const ProjectList = styled.ul`
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 300px;
+    justify-content: center;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        grid-template-columns: 575px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-template-columns: 1fr;
+    };
 `;
 
 export const ProjectItem = styled.li`
