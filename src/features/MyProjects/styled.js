@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as MarkGitHub } from "../../assets/mark-github.svg";
 
 export const Wrapper = styled.section`
-    padding: 80px 0;
+    padding: 30px 0 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         padding: 60px 0;
