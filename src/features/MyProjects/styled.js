@@ -5,11 +5,11 @@ export const Wrapper = styled.section`
     padding: 30px 0 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        padding: 60px 0;
+        padding: 20px 0 0;
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
-        padding: 40px 0 30px;
+        padding: 20px 0 10px;
     };
 `;
 
@@ -48,6 +48,10 @@ export const PortfolioHeading = styled.h3`
 `;
 
 export const PortfolioText = styled.span`
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        font-size: 14px;
+    };
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 12px;
     };
@@ -62,4 +66,12 @@ export const ProjectWrapper = styled.div`
     justify-items: center;
     grid-gap: 20px;
     margin: 20px 0 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        grid-gap: 15px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        grid-gap: 10px;
+    };
 `;
