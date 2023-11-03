@@ -1,11 +1,11 @@
 import sk_photo from "../../assets/sk_photo.jpg";
 import { email } from "../../commonValues";
+import { ButtonLinkElement } from "../ButtonLinkElement";
+import { ButtonIcon } from "../ButtonLinkElement/styled";
 import { Heading } from "../Heading"
 import {
     AboutContainer,
     Avatar,
-    ButtonIcon,
-    ButtonLink,
     Hi,
     Summary,
     Wrapper
@@ -37,13 +37,12 @@ export const MainInformation = () => (
                 cleaner code 😇
             </Summary>
             <div>
-                <ButtonLink
-                    draggable={false}
+                <ButtonLinkElement
                     href={`mailto:${email}`}
-                    title={email}>
-                    <ButtonIcon />
-                    Message me
-                </ButtonLink>
+                    title={email}
+                    children={<ButtonIcon />}
+                    text={"Message me"}
+                />
             </div>
         </AboutContainer>
     </Wrapper>
