@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.footer`
-    padding: 80px 0 40px;
+    padding: 60px 0 40px;
     display: grid;
     grid-gap: 15px;
 `;
