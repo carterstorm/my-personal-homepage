@@ -9,18 +9,19 @@ export const ProjectList = styled.ul`
     padding: 0;
     margin: 0;
     display: grid;
-    grid-gap: 32px;
+    grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px;
+    grid-auto-rows: 300px;
 `;
 
 export const ProjectItem = styled.li`
-    padding: 50px;
+    padding: 35px;
     background-color: ${({ theme }) => theme.colors.tileColor};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadius}px;
-    display: grid;
-    grid-gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `;
 
 export const ProjectName = styled.h4`
