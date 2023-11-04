@@ -1,17 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.section`
-    margin-top: 60px;
-    padding: 0 32px 0;
-    background-color: ${({ theme }) => theme.colors.tileColor};
-    box-shadow: ${({ theme }) => theme.boxShadow};
-    border-radius: ${({ theme }) => theme.borderRadius}px;
-
-    @media(max-width: 920px) {
-        padding: 0 0;
-    };
-`;
-
 export const SkillsList = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);

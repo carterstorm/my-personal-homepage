@@ -1,11 +1,12 @@
 import { Heading } from "../../../common/Heading";
-import { SkillsList, Wrapper } from "./styled";
+import { SectionWrapper } from "../../styled";
+import { SkillsList } from "./styled";
 
 export const SkillsSection = ({ title, skills }) => (
-    <Wrapper>
+    <SectionWrapper>
         <Heading
             title={title}
-            skillsPadding
+            padding
             as="h2"
         />
         <SkillsList>
@@ -17,5 +18,5 @@ export const SkillsSection = ({ title, skills }) => (
                 </li>
             ))}
         </SkillsList>
-    </Wrapper>
+    </SectionWrapper>
 );
