@@ -5,14 +5,14 @@ export const StyledHeading = styled.h1`
     font-weight: 900;
     margin: 0;
     color: ${({ theme }) => theme.colors.text.secondaryTextColor};
-    padding: ${({ skillsPadding }) => skillsPadding ? "16px 0" : null};
+    padding: ${({ padding }) => padding ? "16px 0" : null};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         font-size: 28px;
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletExtraBreakpoint}px) {
-        padding: ${({ skillsPadding }) => skillsPadding ? "16px 32px" : null};
+        padding: ${({ padding }) => padding ? "16px 32px" : null};
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
