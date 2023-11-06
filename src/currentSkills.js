@@ -91,4 +91,16 @@ export const currentSkills = [
         id: 23,
         skillText: "NPM",
     },
+    {
+        id: 24,
+        skillText: "Figma",
+    },
+    {
+        id: 25,
+        skillText: "Adobe Photoshop",
+    },
+    {
+        id: 26,
+        skillText: "Adobe XD",
+    },
 ];
