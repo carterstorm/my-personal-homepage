@@ -6,6 +6,19 @@ export const Wrapper = styled.footer`
     grid-gap: 15px;
 `;
 
+export const LastSentence = styled.p`
+    margin: 0;
+    font-size: 14px;
+    max-width: 600px;
+    font-style: italic;
+    line-height: 1.4;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 12px;
+        max-width: 500px;
+    };
+`;
+
 export const ContactHeading = styled.h3`
     font-size: 12px;
     font-weight: 700;
