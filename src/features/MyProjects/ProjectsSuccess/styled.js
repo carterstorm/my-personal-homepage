@@ -18,7 +18,7 @@ export const ProjectList = styled.ul`
         grid-template-columns: 575px;
     };
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileExtraBreakpoint}px) {
         grid-template-columns: 1fr;
     };
 `;
@@ -45,7 +45,12 @@ export const ProjectDescription = styled.p`
     margin: 0;
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 0.9px;
+    line-height: 1.6;
+    text-align: justify;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 12px;
+    };
 `;
 
 export const LinksContainer = styled.div`
@@ -58,6 +63,12 @@ export const LinkElement = styled.div`
     margin: 10px 0;
 `;
 
+export const LinkSpan = styled.span`
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 12px;
+    };
+`;
+
 export const Link = styled.a`
     line-height: 1.4;
     color: ${({ theme }) => theme.colors.text.primaryTextColor};
@@ -65,5 +76,9 @@ export const Link = styled.a`
 
     &:hover {
         color: ${({ theme }) => theme.colors.footerLinksColorHover};
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 12px;
     };
 `;
