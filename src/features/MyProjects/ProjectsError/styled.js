@@ -24,7 +24,6 @@ export const ProjectErrorHeading = styled.h4`
 
 export const ProjectErrorText = styled.span`
     text-align: center;
-    line-height: 1.5;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         font-size: 14px;

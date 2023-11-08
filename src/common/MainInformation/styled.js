@@ -54,7 +54,6 @@ export const Avatar = styled.img`
 export const Hi = styled.span`
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.6;
     text-align: justify;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {

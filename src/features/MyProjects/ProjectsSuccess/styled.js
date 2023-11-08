@@ -45,7 +45,6 @@ export const ProjectDescription = styled.p`
     margin: 0;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.6;
     text-align: justify;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
@@ -70,7 +69,6 @@ export const LinkSpan = styled.span`
 `;
 
 export const Link = styled.a`
-    line-height: 1.4;
     color: ${({ theme }) => theme.colors.text.primaryTextColor};
     transition: .3s;
 

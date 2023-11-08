@@ -12,7 +12,6 @@ export const LastSentence = styled.p`
     font-size: 14px;
     max-width: 600px;
     font-style: italic;
-    line-height: 1.4;
     text-align: justify;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {

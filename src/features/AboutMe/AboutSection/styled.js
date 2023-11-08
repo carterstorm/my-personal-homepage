@@ -15,7 +15,6 @@ export const Article = styled.article`
 `;
 
 export const Paragraph = styled.p`
-    line-height: 1.6;
     text-indent: 16px;
     text-align: justify;
     margin: 0;
