@@ -1,4 +1,6 @@
 import { AboutSection } from "./AboutSection";
+import { Education } from "./Education";
+import { Future } from "./Future";
 import { Introduction } from "./Introduction";
 
 export const AboutMe = () => (
@@ -9,8 +11,11 @@ export const AboutMe = () => (
         />
         <AboutSection
             title={"Experience and education"}
+            children={<Education />}
+        />
+        <AboutSection
+            title={"Future"}
+            children={<Future />}
         />
     </>
-
-
 );
