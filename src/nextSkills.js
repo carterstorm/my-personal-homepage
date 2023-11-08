@@ -5,70 +5,78 @@ export const nextSkills = [
     },
     {
         id: 2,
-        skillText: "React Context",
+        skillText: "Vite",
     },
     {
         id: 3,
-        skillText: "NX",
+        skillText: "monorepo",
     },
     {
         id: 4,
-        skillText: "pnpm",
+        skillText: "NX",
     },
     {
         id: 5,
-        skillText: "Tailwind CSS",
+        skillText: "pnpm",
     },
     {
         id: 6,
-        skillText: "Storybook",
+        skillText: "Tailwind CSS",
     },
     {
         id: 7,
-        skillText: "Chromatica",
+        skillText: "Storybook",
     },
     {
         id: 8,
-        skillText: "Unit testing",
+        skillText: "Chromatica",
     },
     {
         id: 9,
-        skillText: "React Testing Library",
+        skillText: "Unit testing",
     },
     {
         id: 10,
-        skillText: "Next.js",
+        skillText: "React Testing Library",
     },
     {
         id: 11,
-        skillText: "Node.js",
+        skillText: "Vitest",
     },
     {
         id: 12,
-        skillText: "NestJS",
+        skillText: "React Context",
     },
     {
         id: 13,
-        skillText: "MJML",
+        skillText: "Next.js",
     },
     {
         id: 14,
-        skillText: "Zod",
+        skillText: "Node.js",
     },
     {
         id: 15,
-        skillText: "Automation and AI tools",
+        skillText: "NestJS",
     },
     {
         id: 16,
-        skillText: "RxJS",
+        skillText: "MJML",
     },
     {
         id: 17,
-        skillText: "Make",
+        skillText: "Zod",
     },
     {
         id: 18,
-        skillText: "SQL",
+        skillText: "Automation and AI tools",
+    },
+    {
+        id: 19,
+        skillText: "RxJS",
+    },
+    {
+        id: 20,
+        skillText: "Make",
     },
 ];
