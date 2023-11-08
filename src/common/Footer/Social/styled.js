@@ -24,4 +24,10 @@ export const SocialLink = styled.a`
 
 export const styleIcon = Icon => styled(Icon)`
     height: 40px;
+    width: 40px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        height: 25px;
+        width: 25px;
+    };
 `;
