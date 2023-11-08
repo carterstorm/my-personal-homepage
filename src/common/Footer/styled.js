@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.footer`
     padding: 60px 0 40px;
     display: grid;
+    justify-items: end;
     grid-gap: 15px;
 `;
 
@@ -12,6 +13,7 @@ export const LastSentence = styled.p`
     max-width: 600px;
     font-style: italic;
     line-height: 1.4;
+    text-align: justify;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 12px;
