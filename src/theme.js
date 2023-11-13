@@ -40,7 +40,6 @@ export const themeLight = {
         button: {
             background: colorsName.scienceBlue,
             textColor: colorsName.white,
-            borderColor: colorsName.black,
         },
     },
 };
