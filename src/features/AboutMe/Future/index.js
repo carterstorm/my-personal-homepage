@@ -9,7 +9,8 @@ export const Future = () => (
             I will be learning best practices commonly used in Frontend teams to create better
             and cleaner code using React library and TypeScript. During the course, I will create
             a monorepo consisting of a frontend, backend and website that will communicate with
-            each other and exchange data. I will be expanding my knowledge in topics such as: Vite,
+            each other and exchange data. Soon I will take part in a sprint on the eduweb.pl
+            platform about learning NestJS. I will be expanding my knowledge in topics such as: Vite,
             Storybook, Tailwind CSS, Nx, Next.js, Vitest, Jest, RTS, Node.js, NestJS and AI tools.
         </Paragraph>
     </>
