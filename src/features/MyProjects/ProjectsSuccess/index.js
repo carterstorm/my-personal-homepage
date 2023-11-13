@@ -8,6 +8,7 @@ import {
     Link,
     Wrapper,
     LinkSpan,
+    LinkElementMobile,
 } from "./styled";
 
 export const ProjectsSuccess = ({ data }) => (
@@ -36,15 +37,32 @@ export const ProjectsSuccess = ({ data }) => (
                                         {html_url}
                                     </Link>
                                 </LinkElement>
+                                <LinkElementMobile
+                                    href={html_url}
+                                    target="_blank"
+                                    title={`Link to repo: ${name}`}
+                                >
+                                    Link to repository
+                                </LinkElementMobile>
                                 {homepage ? (
-                                    <LinkElement>
-                                        <LinkSpan>Link to demo:</LinkSpan>
-                                        <Link
-                                            href={homepage}
+                                    <>
+                                        <LinkElementMobile
+                                            href={html_url}
                                             target="_blank"
-                                            title={`Link to demo: ${name}`}>{homepage}
-                                        </Link>
-                                    </LinkElement>
+                                            title={`Link to repo: ${name}`}
+                                        >
+                                            Link to repository
+                                        </LinkElementMobile>
+                                        <LinkElement>
+                                            <LinkSpan>Link to demo:</LinkSpan>
+                                            <Link
+                                                href={homepage}
+                                                target="_blank"
+                                                title={`Link to demo: ${name}`}>
+                                                {homepage}
+                                            </Link>
+                                        </LinkElement>
+                                    </>
                                 ) : null}
                             </LinksContainer>
                         </ProjectItem>

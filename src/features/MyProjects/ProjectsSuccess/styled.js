@@ -11,15 +11,21 @@ export const ProjectList = styled.ul`
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 300px;
+    grid-auto-rows: minmax(350px, 1fr);
     justify-content: center;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         grid-template-columns: 575px;
+        grid-auto-rows: minmax(300px, 1fr);
     };
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileExtraBreakpoint}px) {
         grid-template-columns: 1fr;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        grid-gap: 20px;
+        grid-auto-rows: minmax(250px, 1fr);
     };
 `;
 
@@ -31,6 +37,15 @@ export const ProjectItem = styled.li`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        padding: 25px;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        padding: 15px;
+    };
 `;
 
 export const ProjectName = styled.h4`
@@ -39,6 +54,11 @@ export const ProjectName = styled.h4`
     font-weight: 700;
     letter-spacing: 1.2px;
     color: ${({ theme }) => theme.colors.footerLinksColorHover};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        font-size: 20px;
+        line-height: 1.4;
+    };
 `;
 
 export const ProjectDescription = styled.p`
@@ -54,12 +74,21 @@ export const ProjectDescription = styled.p`
 
 export const LinksContainer = styled.div`
     font-size: 14px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        display: flex;
+        justify-content: space-evenly;
+    };
 `;
 
 export const LinkElement = styled.div`
     display: grid;
     grid-template-columns: 100px 1fr;
     margin: 10px 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileSmall}px) {
+        display: none;
+    };
 `;
 
 export const LinkSpan = styled.span`
@@ -78,5 +107,13 @@ export const Link = styled.a`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 12px;
+    };
+`;
+
+export const LinkElementMobile = styled.a`
+    font-size: 12px;
+
+    @media(min-width: ${({ theme }) => theme.breakpoints.mobileSmall + 1}px) {
+        display: none;
     };
 `;
