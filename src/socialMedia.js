@@ -14,7 +14,7 @@ export const socialMedia = [
         id: 2,
         socialName: "Linkedin",
         Icon: styleIcon(LinkedinIcon),
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/in/sebastian-komorowski-it/",
     },
     {
         id: 3,
