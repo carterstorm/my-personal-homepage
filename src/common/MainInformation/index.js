@@ -29,7 +29,7 @@ export const MainInformation = () => (
                 title="Sebastian Komorowski"
             />
             <Summary>
-                I have been learning Frontend technology for some time.
+                I have been learning Frontend technology from 1,5 year.
                 It gives me a lot of satisfaction.
                 I know I still have a lot to learn, but i'm really motivated
                 and I hope you will help me become a Junior Frontend Developer
