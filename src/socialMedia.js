@@ -1,7 +1,6 @@
 import { styleIcon } from "./common/Footer/Social/styled";
 import { ReactComponent as GitHubIcon } from "./assets/github.svg";
 import { ReactComponent as LinkedinIcon } from "./assets/linkedin.svg";
-import { ReactComponent as FacebookIcon } from "./assets/facebook.svg";
 
 export const socialMedia = [
     {
@@ -15,11 +14,5 @@ export const socialMedia = [
         socialName: "Linkedin",
         Icon: styleIcon(LinkedinIcon),
         url: "https://www.linkedin.com/in/sebastian-komorowski-it/",
-    },
-    {
-        id: 3,
-        socialName: "Facebook",
-        Icon: styleIcon(FacebookIcon),
-        url: "https://www.facebook.com/sebastian.komorowski1/",
     },
 ];
