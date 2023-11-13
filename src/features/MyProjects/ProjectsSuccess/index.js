@@ -1,3 +1,4 @@
+import { ButtonLinkElement } from "../../../common/ButtonLinkElement";
 import {
     ProjectDescription,
     ProjectItem,
@@ -8,7 +9,6 @@ import {
     Link,
     Wrapper,
     LinkSpan,
-    LinkElementMobile,
 } from "./styled";
 
 export const ProjectsSuccess = ({ data }) => (
@@ -37,22 +37,20 @@ export const ProjectsSuccess = ({ data }) => (
                                         {html_url}
                                     </Link>
                                 </LinkElement>
-                                <LinkElementMobile
+                                <ButtonLinkElement
                                     href={html_url}
                                     target="_blank"
                                     title={`Link to repo: ${name}`}
-                                >
-                                    Link to repository
-                                </LinkElementMobile>
+                                    text={"Link to repository"}
+                                />
                                 {homepage ? (
                                     <>
-                                        <LinkElementMobile
-                                            href={html_url}
+                                        <ButtonLinkElement
+                                            href={homepage}
                                             target="_blank"
-                                            title={`Link to repo: ${name}`}
-                                        >
-                                            Link to repository
-                                        </LinkElementMobile>
+                                            title={`Link to demo: ${name}`}
+                                            text={"Link to demo"}
+                                        />
                                         <LinkElement>
                                             <LinkSpan>Link to demo:</LinkSpan>
                                             <Link

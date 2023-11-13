@@ -110,10 +110,6 @@ export const Link = styled.a`
     };
 `;
 
-export const LinkElementMobile = styled.a`
-    font-size: 12px;
-
-    @media(min-width: ${({ theme }) => theme.breakpoints.mobileSmall + 1}px) {
-        display: none;
-    };
-`;
+// @media(min-width: ${({ theme }) => theme.breakpoints.mobileSmall + 1}px) {
+//     display: none;
+// };
