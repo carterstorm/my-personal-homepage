@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as Envelope } from "../../assets/envelope.svg";
 
 export const ButtonLink = styled.a`
@@ -7,10 +7,9 @@ export const ButtonLink = styled.a`
     align-items: center;
     text-align: center;
     color: ${({ theme }) => theme.colors.button.textColor};
-    border: 2px solid ${({ theme }) => theme.colors.button.borderColor};
     background-color: ${({ theme }) => theme.colors.button.background};
     border-radius: ${({ theme }) => theme.borderRadius}px;
-    padding: 6px 18px;
+    padding: ${({ tileLink }) => tileLink ? "4px 10px" : "6px 18px"};
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
@@ -23,6 +22,12 @@ export const ButtonLink = styled.a`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 12px;
+    };
+
+    @media(min-width: ${({ theme }) => theme.breakpoints.mobileSmall + 1}px) {
+        ${({ tileLink }) => tileLink && css`
+            display: none;
+        `};
     };
 `;
 

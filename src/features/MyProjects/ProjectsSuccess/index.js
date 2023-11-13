@@ -38,16 +38,16 @@ export const ProjectsSuccess = ({ data }) => (
                                     </Link>
                                 </LinkElement>
                                 <ButtonLinkElement
+                                    tileLink
                                     href={html_url}
-                                    target="_blank"
                                     title={`Link to repo: ${name}`}
                                     text={"Link to repository"}
                                 />
                                 {homepage ? (
                                     <>
                                         <ButtonLinkElement
+                                            tileLink
                                             href={homepage}
-                                            target="_blank"
                                             title={`Link to demo: ${name}`}
                                             text={"Link to demo"}
                                         />
