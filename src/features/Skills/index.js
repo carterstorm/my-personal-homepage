@@ -1,7 +1,7 @@
 import { SkillsSection } from "./SkillsSection";
 import { currentSkills } from "../../currentSkills";
 import { nextSkills } from "../../nextSkills";
-import { futureSkills } from "../../futureSkills";
+import { inProgress } from "../../inProgress";
 
 export const Skills = () => (
     <>
@@ -10,12 +10,12 @@ export const Skills = () => (
             skills={currentSkills}
         />
         <SkillsSection
-            title="What I want to learn next 📚"
-            skills={nextSkills}
+            title="What I currently learning 📖"
+            skills={inProgress}
         />
         <SkillsSection
-            title="What I want to learn in the further future ⏱️"
-            skills={futureSkills}
+            title="What I want to learn next 📚"
+            skills={nextSkills}
         />
     </>
 );

@@ -1,13 +1,5 @@
 export const nextSkills = [
     {
-        id: 1,
-        skillText: "TypeScript",
-    },
-    {
-        id: 2,
-        skillText: "Vite",
-    },
-    {
         id: 3,
         skillText: "monorepo",
     },
@@ -16,20 +8,8 @@ export const nextSkills = [
         skillText: "NX",
     },
     {
-        id: 5,
-        skillText: "pnpm",
-    },
-    {
         id: 6,
         skillText: "Tailwind CSS",
-    },
-    {
-        id: 7,
-        skillText: "Storybook",
-    },
-    {
-        id: 8,
-        skillText: "Chromatica",
     },
     {
         id: 9,
@@ -42,14 +22,6 @@ export const nextSkills = [
     {
         id: 11,
         skillText: "Vitest",
-    },
-    {
-        id: 12,
-        skillText: "React Context",
-    },
-    {
-        id: 13,
-        skillText: "Next.js",
     },
     {
         id: 14,
@@ -78,5 +50,9 @@ export const nextSkills = [
     {
         id: 20,
         skillText: "Make",
+    },
+    {
+        id: 21,
+        skillText: "Zustand",
     },
 ];

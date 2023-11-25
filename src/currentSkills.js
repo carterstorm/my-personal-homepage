@@ -21,7 +21,11 @@ export const currentSkills = [
     },
     {
         id: 6,
-        skillText: "SASS/LESS",
+        skillText: "SCSS",
+    },
+    {
+        id: 66,
+        skillText: "CSS modules",
     },
     {
         id: 7,

@@ -21,20 +21,18 @@ export const MainInformation = () => (
         />
         <AboutContainer>
             <Hi>
-                Hi there! 🚀 🤙 😎  I'm a guy who just starting his
-                adventure in IT world.<br />
+                Hi there! 🚀 🤙 😎  Nice to see you!<br />
                 My name is:
             </Hi>
             <Heading
                 title="Sebastian Komorowski"
             />
             <Summary>
-                I have been learning Frontend technology from 1,5 year.
-                It gives me a lot of satisfaction.
-                I know I still have a lot to learn, but i'm really motivated
-                and I hope you will help me become a Junior Frontend Developer
-                with React and show me good practices how to write better and
-                cleaner code 😇
+                I approach programming with passion and
+                enthusiasm, constantly discovering new learning
+                opportunities. I am hard-working, creative, and ambitious.
+                I believe that the opportunity for growth, self-improvement, and knowledge enhancement
+                is the most valuable aspect.
             </Summary>
             <div>
                 <ButtonLinkElement
